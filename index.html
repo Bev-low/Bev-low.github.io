@@ -6,27 +6,46 @@
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light-theme">
     <header>
         <h1>Low Beverly</h1>
         <p>Computer Engineering Student | Aspiring Entrepreneur</p>
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
     </header>
 
-    <section id="robotics-projects">
+    <!-- Updated Projects Section with Interactive Cards -->
+    <section id="projects">
         <h2>Robotics Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Bev-low/Alex-the-Rescue-Bot">Alex-the-Rescue-Bot</a></li>
-            <li><a href="https://github.com/Bev-low/Ryan-The-Maze-Runner">Ryan-The-Maze-Runner</a></li>
-        </ul>
+        <div class="project-card" data-id="alex-rescue">
+            <h3>Alex-the-Rescue-Bot</h3>
+            <a href="https://github.com/Bev-low/Alex-the-Rescue-Bot" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-id="ryan-maze">
+            <h3>Ryan-The-Maze-Runner</h3>
+            <a href="https://github.com/Bev-low/Ryan-The-Maze-Runner" target="_blank">View on GitHub</a>
+        </div>
+
+        <h2>Software Projects</h2>
+        <div class="project-card" data-id="chatty-charlie">
+            <h3>ChattyCharlie</h3>
+            <a href="https://github.com/Bev-low/ip" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card" data-id="buff-budy">
+            <h3>BuffBudy</h3>
+            <a href="https://github.com/Bev-low/tp" target="_blank">View on GitHub</a>
+        </div>
     </section>
 
-    <section id="software-projects">
-        <h2>Software Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Bev-low/ip">ChattyCharlie</a></li>
-            <li><a href="https://github.com/Bev-low/tp">BuffBudy</a></li>
-        </ul>
-    </section>
+    <!-- Modal Structure for Project Details -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
 
     <section id="skills">
         <h2>Skills</h2>
@@ -39,6 +58,10 @@
     <footer>
         <p>Contact: <a href="mailto:low_beverly@u.nus.edu">low_beverly@u.nus.edu</a></p>
     </footer>
+    
+    <!-- JavaScript File Link -->
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
