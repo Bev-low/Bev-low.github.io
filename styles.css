@@ -1,33 +1,59 @@
-/* Basic styling for the header */
-header {
-    text-align: center;
-    margin-top: 20px;
+body {
+    background-color: #1a2a40; /* Navy blue */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styling for the tabs */
-.tabs {
+header {
+    background-color: #1a2a40;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Tab navigation styling */
+.nav-tabs {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    background-color: #1a2a40;
+    padding: 10px 0;
 }
 
-.tabs button {
-    background-color: #f0f0f0;
-    border: none;
+.nav-tabs a {
+    color: #ffffff;
     padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
 }
 
-.tabs button:hover {
-    background-color: #ddd;
+.nav-tabs a:hover {
+    border-bottom: 2px solid #ffffff;
 }
 
-.tab-content {
-    padding: 20px;
-    display: none; /* Hide all tabs by default */
+/* Content section styling */
+.content-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #2c3e50; /* Darker navy background */
+    border-radius: 10px;
+    margin: 20px;
 }
 
-.tab-content.active {
-    display: block; /* Show the active tab */
+/* Make headings stand out */
+.content-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
