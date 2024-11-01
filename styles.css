@@ -1,3 +1,4 @@
+/* Set the main background color to navy blue */
 body {
     background-color: #1a2a40; /* Navy blue */
     color: #ffffff; /* White text for contrast */
@@ -6,12 +7,14 @@ body {
     padding: 0;
 }
 
+/* Header styling */
 header {
     background-color: #1a2a40;
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
     color: #ffffff;
 }
+
 header h1 {
     font-size: 36px;
     margin: 0;
@@ -19,9 +22,10 @@ header h1 {
 
 header p {
     font-size: 16px;
+    margin: 5px 0 0;
 }
 
-/* Tab navigation styling */
+/* Navigation Tabs */
 .nav-tabs {
     display: flex;
     justify-content: center;
@@ -32,15 +36,24 @@ header p {
 .nav-tabs a {
     color: #ffffff;
     padding: 10px 20px;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .nav-tabs a:hover {
-    border-bottom: 2px solid #ffffff;
+    background-color: #34495e;
+    border-color: #ffffff;
+}
+
+/* Active tab */
+.nav-tabs a.active {
+    background-color: #34495e;
+    border-color: #ffffff;
 }
 
 /* Content section styling */
@@ -48,8 +61,11 @@ header p {
     padding: 40px;
     text-align: center;
     background-color: #2c3e50; /* Darker navy background */
+    color: #ffffff;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
 }
 
 /* Make headings stand out */
@@ -57,3 +73,4 @@ header p {
     font-size: 28px;
     margin-bottom: 20px;
 }
+
