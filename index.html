@@ -3,65 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-theme">
-    <header>
-        <h1>Low Beverly</h1>
-        <p>Computer Engineering Student | Aspiring Entrepreneur</p>
-        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
-    </header>
+<body>
+<header>
+    <h1>Low Beverly</h1>
+    <p>Computer Engineering Student | Aspiring Entrepreneur</p>
+</header>
 
-    <!-- Updated Projects Section with Interactive Cards -->
-    <section id="projects">
-        <h2>Robotics Projects</h2>
-        <div class="project-card" data-id="alex-rescue">
-            <h3>Alex-the-Rescue-Bot</h3>
-            <a href="https://github.com/Bev-low/Alex-the-Rescue-Bot" target="_blank">View on GitHub</a>
-        </div>
+<!-- Tab Navigation -->
+<nav class="tabs">
+    <button onclick="openTab('summary')">Summary</button>
+    <button onclick="openTab('projects')">Projects</button>
+    <button onclick="openTab('hobbies')">Hobbies</button>
+    <button onclick="openTab('contact')">Contact</button>
+</nav>
 
-        <div class="project-card" data-id="ryan-maze">
-            <h3>Ryan-The-Maze-Runner</h3>
-            <a href="https://github.com/Bev-low/Ryan-The-Maze-Runner" target="_blank">View on GitHub</a>
-        </div>
+<!-- Content Sections -->
+<div id="summary" class="tab-content">
+    <h2>Summary</h2>
+    <p>Your summary content goes here...</p>
+</div>
 
-        <h2>Software Projects</h2>
-        <div class="project-card" data-id="chatty-charlie">
-            <h3>ChattyCharlie</h3>
-            <a href="https://github.com/Bev-low/ip" target="_blank">View on GitHub</a>
-        </div>
+<div id="projects" class="tab-content" style="display: none;">
+    <h2>Projects</h2>
+    <p>Your projects content goes here...</p>
+</div>
 
-        <div class="project-card" data-id="buff-budy">
-            <h3>BuffBudy</h3>
-            <a href="https://github.com/Bev-low/tp" target="_blank">View on GitHub</a>
-        </div>
-    </section>
+<div id="hobbies" class="tab-content" style="display: none;">
+    <h2>Hobbies</h2>
+    <p>Your hobbies content goes here...</p>
+</div>
 
-    <!-- Modal Structure for Project Details -->
-    <div id="project-modal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-        </div>
-    </div>
+<div id="contact" class="tab-content" style="display: none;">
+    <h2>Contact</h2>
+    <p>Your contact information goes here...</p>
+</div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Programming Languages: C, C++, Java</p>
-        <p>Technical Knowledge: Data Structures and Algorithms, Object-Oriented Programming</p>
-        <p>Hobbies: Hiking, Bouldering, Surfing, Videography, Photography</p>
-        <p>Languages: English, Chinese</p>
-    </section>
-
-    <footer>
-        <p>Contact: <a href="mailto:low_beverly@u.nus.edu">low_beverly@u.nus.edu</a></p>
-    </footer>
-    
-    <!-- JavaScript File Link -->
-    <script src="scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
-
-
