@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies - Low Beverly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>My Hobbies</h1>
+  <p>Click on the icons below to learn more about each of my hobbies!</p>
+</header>
+
+<div class="hobby-icons">
+  <!-- Camera Icon for Photography -->
+  <div class="hobby-item" onclick="showPopup('photography')">
+    <img src="camera.png" alt="Camera Icon" class="icon">
+    <p>Photography</p>
+  </div>
+
+  <!-- Video Editing Icon for Video Editing -->
+  <div class="hobby-item" onclick="showPopup('videoEditing')">
+    <img src="video-editing.png" alt="Video Editing Icon" class="icon">
+    <p>Video Editing</p>
+  </div>
+
+  <!-- Robot Icon for Robotics -->
+  <div class="hobby-item" onclick="showPopup('robotics')">
+    <img src="robot.png" alt="Robot Icon" class="icon">
+    <p>Robotics</p>
+  </div>
+</div>
+
+<!-- Pop-up boxes for each hobby -->
+<div id="photography" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('photography')">&times;</span>
+    <h2>Photography</h2>
+    <p>I enjoy capturing moments and exploring different photography techniques, from landscapes to portraits. Photography allows me to express creativity and see the world from unique perspectives.</p>
+  </div>
+</div>
+
+<div id="videoEditing" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('videoEditing')">&times;</span>
+    <h2>Video Editing</h2>
+    <p>Video editing is one of my favorite hobbies. I love piecing together clips and adding effects to tell stories and create engaging content, which I often share on my social media platforms.</p>
+  </div>
+</div>
+
+<div id="robotics" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('robotics')">&times;</span>
+    <h2>Robotics</h2>
+    <p>As a tech enthusiast, I am passionate about robotics. I enjoy building and programming robots to perform various tasks, experimenting with sensors and motors to create interactive experiences.</p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
